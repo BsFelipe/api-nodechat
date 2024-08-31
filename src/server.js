@@ -1,11 +1,5 @@
-import app from './app';
-import dotenv from 'dotenv';
+import App from './app';
 
-dotenv.config();
+App.start();
 
-const port = process.env.PORT || 3015
-app.listen(port, () => {
-  console.log();
-  console.log(`Listening on ${port}`);
-  console.log(`CRTL on http://localhost:${port}`);
-})
+
